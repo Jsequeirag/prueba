@@ -29,7 +29,7 @@ const manifestForPlugIn = {
       },
       {
         src: "/maskable_icon.png",
-        sizes: "512x512",
+        sizes: "192x192",
         type: "image/png",
         purpose: "any maskable",
       },
@@ -49,10 +49,7 @@ export default defineConfig({
     react(),
     VitePWA(
       {
-        registerType: "autoUpdate",
-        devOptions: {
-          enabled: true,
-        },
+        registerType: "prompt",
       },
       manifestForPlugIn
     ),
